@@ -12,6 +12,10 @@
 
 [Key Features](#-key-features) • [Architecture](#-architecture--data-flow) • [Tech Stack](#-technology-stack) • [Quick Start](#-quick-start--installation) • [Licensing](#-licensing--commercial-inquiries)
 
+<br/>
+
+![Scanner Hero Showcase](assets/hero-scanner-preview.svg)
+
 </div>
 
 ---
@@ -48,6 +52,10 @@ In modern B2B sales, conferences, and field networking, paper business cards rem
 * **Save as Contact:** Links the new contact to an existing Account via real-time Account autocomplete, or creates a new parent Account on the fly.
 * **Save as Account:** Directly generates Business Account records.
 
+<br/>
+
+![Extracted Form & CRM Mapping Preview](assets/extracted-review-preview.svg)
+
 ### 5. 🔒 Enterprise Security & Anti-Loophole Protection
 * **Server-Side Enforcement:** Strictly enforced server-side access control with `WITH USER_MODE` SOQL queries and sharing rules.
 * **7-Day Automated Trial:** Evaluates automatically from the moment a user is assigned to the `Card Scanner Access` permission set.
@@ -56,6 +64,10 @@ In modern B2B sales, conferences, and field networking, paper business cards rem
 ---
 
 ## 🏗️ Architecture & Data Flow
+
+![System Architecture & Pipeline](assets/architecture-diagram.svg)
+
+<br/>
 
 ```mermaid
 sequenceDiagram
@@ -139,6 +151,12 @@ This solution comes with an automated **7-Day Free Trial** for up to **2 demo us
 
 ### Ready to activate full licenses for your sales team?
 Get in touch directly with our licensing and commercial partnership team:
+
+<br/>
+
+![Commercial License & Upgrade Preview](assets/upgrade-screen-preview.svg)
+
+<br/>
 
 <div align="center">
 
