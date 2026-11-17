@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="100%" height="100%">
+  <defs>
+    <linearGradient id="stripBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#032d60"/>
+      <stop offset="100%" stop-color="#0070d2"/>
+    </linearGradient>
+    <filter id="boxShadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Container Frame -->
+  <rect x="10" y="10" width="780" height="500" rx="14" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Top Preview Strip -->
+  <path d="M10 24C10 16.268 16.268 10 24 10H776C783.732 10 790 16.268 790 24V90H10V24Z" fill="url(#stripBg)"/>
+
+  <!-- Scanned Card Thumbnail in Strip -->
+  <g transform="translate(30, 22)">
+    <rect x="0" y="0" width="75" height="50" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1"/>
+    <rect x="6" y="8" width="20" height="4" rx="1" fill="#0284c7"/>
+    <rect x="6" y="16" width="40" height="5" rx="1" fill="#0f172a"/>
+    <rect x="6" y="24" width="30" height="3" rx="1" fill="#64748b"/>
+    <rect x="6" y="30" width="50" height="3" rx="1" fill="#94a3b8"/>
+    <!-- Extracted Badge -->
+    <rect x="10" y="40" width="55" height="15" rx="7.5" fill="#04844b"/>
+    <text x="37" y="51" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="800" fill="#ffffff" text-anchor="middle">✓ Extracted</text>
+  </g>
+
+  <!-- Extracted Summary in Strip -->
+  <text x="120" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#ffffff">Sarah Jenkins</text>
+  <text x="120" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#bae6fd">Apex Innovators Inc. • VP of Enterprise Sales</text>
+
+  <!-- Strip Action Buttons (Retake, Gallery, Reset) -->
+  <g transform="translate(560, 32)">
+    <!-- Retake Button -->
+    <rect x="0" y="0" width="75" height="28" rx="6" fill="#ffffff" fill-opacity="0.18" stroke="#ffffff" stroke-width="1" stroke-opacity="0.4"/>
+    <path d="M12 14A4 4 0 1 0 13.5 10.5L12 10.3M14 8L12 10.3L14 12" stroke="#ffffff" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+    <text x="44" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Retake</text>
+
+    <!-- Gallery Button -->
+    <rect x="85" y="0" width="75" height="28" rx="6" fill="#ffffff" fill-opacity="0.18" stroke="#ffffff" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="122" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Gallery</text>
+
+    <!-- Refresh Button -->
+    <rect x="170" y="0" width="28" height="28" rx="6" fill="#ffffff" fill-opacity="0.18" stroke="#ffffff" stroke-width="1" stroke-opacity="0.4"/>
+    <path d="M184 10A4 4 0 1 0 187 13.5L185 13M187 11V13.5H184.5" stroke="#ffffff" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Save As Tabs Bar -->
+  <rect x="10" y="90" width="780" height="44" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="35" y="117" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#475569">SAVE AS:</text>
+
+  <!-- Tab 1: Lead (Active) -->
+  <rect x="110" y="97" width="95" height="30" rx="6" fill="#0176d3"/>
+  <text x="157" y="116" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">👤 Lead (Active)</text>
+
+  <!-- Tab 2: Contact -->
+  <rect x="215" y="97" width="85" height="30" rx="6" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="257" y="116" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#475569" text-anchor="middle">👥 Contact</text>
+
+  <!-- Tab 3: Account -->
+  <rect x="310" y="97" width="85" height="30" rx="6" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="352" y="116" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#475569" text-anchor="middle">🏢 Account</text>
+
+  <!-- Form Fields Grid Container -->
+  <g transform="translate(30, 150)">
+    
+    <!-- Row 1: First Name & Last Name -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#475569">FIRST NAME</text>
+      <rect x="0" y="18" width="350" height="36" rx="6" fill="#ffffff" stroke="#cbd5e1"/>
+      <text x="12" y="41" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#0f172a">Sarah</text>
+
+      <text x="380" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#475569">LAST NAME *</text>
+      <rect x="380" y="18" width="350" height="36" rx="6" fill="#ffffff" stroke="#cbd5e1"/>
+      <text x="392" y="41" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#0f172a">Jenkins</text>
+    </g>
+
+    <!-- Row 2: Company & Title -->
+    <g transform="translate(0, 70)">
+      <text x="0" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#475569">COMPANY *</text>
+      <rect x="0" y="18" width="350" height="36" rx="6" fill="#ffffff" stroke="#cbd5e1"/>
+      <text x="12" y="41" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#0f172a">Apex Innovators Inc.</text>
+
+      <text x="380" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#475569">TITLE</text>
+      <rect x="380" y="18" width="350" height="36" rx="6" fill="#ffffff" stroke="#cbd5e1"/>
+      <text x="392" y="41" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#0f172a">VP of Enterprise Sales</text>
+    </g>
+
+    <!-- Row 3: Email & Phone -->
+    <g transform="translate(0, 140)">
+      <text x="0" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#475569">EMAIL</text>
+      <rect x="0" y="18" width="350" height="36" rx="6" fill="#ffffff" stroke="#cbd5e1"/>
+      <text x="12" y="41" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#0f172a">sarah.jenkins@apexinnovators.com</text>
+
+      <text x="380" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#475569">PHONE / MOBILE</text>
+      <rect x="380" y="18" width="350" height="36" rx="6" fill="#ffffff" stroke="#cbd5e1"/>
+      <text x="392" y="41" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#0f172a">+1 (415) 890-2341</text>
+    </g>
+
+    <!-- Row 4: Street Address -->
+    <g transform="translate(0, 210)">
+      <text x="0" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#475569">STREET &amp; CITY</text>
+      <rect x="0" y="18" width="730" height="36" rx="6" fill="#ffffff" stroke="#cbd5e1"/>
+      <text x="12" y="41" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#0f172a">50 Fremont St, San Francisco, CA 94105, United States</text>
+    </g>
+
+  </g>
+
+  <!-- Bottom Action Footer -->
+  <rect x="10" y="450" width="780" height="60" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+  <rect x="520" y="462" width="90" height="36" rx="8" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="565" y="484" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#475569" text-anchor="middle">Cancel</text>
+
+  <rect x="625" y="462" width="135" height="36" rx="8" fill="#0176d3"/>
+  <text x="692" y="484" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">💾 Save Lead</text>
+</svg>
