@@ -14,7 +14,7 @@
 
 <br/>
 
-![Scanner Hero Showcase](assets/hero-scanner-preview.svg)
+![Scanner Hero Showcase](assets/hero-scanner-preview.svg?v=2)
 
 </div>
 
@@ -54,7 +54,7 @@ In modern B2B sales, conferences, and field networking, paper business cards rem
 
 <br/>
 
-![Extracted Form & CRM Mapping Preview](assets/extracted-review-preview.svg)
+![Extracted Form & CRM Mapping Preview](assets/extracted-review-preview.svg?v=2)
 
 ### 5. 🔒 Enterprise Security & Anti-Loophole Protection
 * **Server-Side Enforcement:** Strictly enforced server-side access control with `WITH USER_MODE` SOQL queries and sharing rules.
@@ -65,7 +65,7 @@ In modern B2B sales, conferences, and field networking, paper business cards rem
 
 ## 🏗️ Architecture & Data Flow
 
-![System Architecture & Pipeline](assets/architecture-diagram.svg)
+![System Architecture & Pipeline](assets/architecture-diagram.svg?v=2)
 
 <br/>
 
@@ -154,7 +154,7 @@ Get in touch directly with our licensing and commercial partnership team:
 
 <br/>
 
-![Commercial License & Upgrade Preview](assets/upgrade-screen-preview.svg)
+![Commercial License & Upgrade Preview](assets/upgrade-screen-preview.svg?v=2)
 
 <br/>
 
