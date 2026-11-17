@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="lockBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b1b2f"/>
+      <stop offset="60%" stop-color="#3d1b38"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+    <filter id="cardGlow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Container -->
+  <rect x="10" y="10" width="780" height="400" rx="16" fill="url(#lockBg)" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- Centered Lock Icon Container -->
+  <circle cx="400" cy="75" r="32" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.3"/>
+  <circle cx="400" cy="75" r="42" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="4 4" stroke-opacity="0.5"/>
+  <!-- Lock SVG -->
+  <path d="M394 72V67C394 63.686 396.686 61 400 61C403.314 61 406 63.686 406 67V72M391 72H409C410.105 72 411 72.895 411 74V83C411 84.105 410.105 85 409 85H391C389.895 85 389 84.105 389 83V74C389 72.895 389.895 72 391 72Z" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Lock Title & Expiry Notice -->
+  <text x="400" y="135" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" fill="#ffffff" text-anchor="middle">Access Restricted</text>
+  <text x="400" y="158" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#fecaca" text-anchor="middle">License Expired: Your 7-day demo trial for this organization has concluded.</text>
+
+  <!-- Commercial Upgrade / Contact Card -->
+  <g transform="translate(190, 180)" filter="url(#cardGlow)">
+    <rect x="0" y="0" width="420" height="175" rx="14" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.3"/>
+    
+    <!-- Top Sparkle Badge -->
+    <rect x="125" y="16" width="170" height="24" rx="12" fill="#0176d3"/>
+    <text x="210" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="800" fill="#ffffff" text-anchor="middle">✨ FULL VERSION &amp; TEAM LICENSES</text>
+
+    <!-- Subtitle -->
+    <text x="210" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="500" fill="#e2e8f0" text-anchor="middle">Ready to unlock unlimited scans and full team access? Contact our licensing desk:</text>
+
+    <!-- Email Action Button -->
+    <g transform="translate(30, 85)">
+      <rect x="0" y="0" width="360" height="36" rx="8" fill="#ffffff"/>
+      <path d="M16 11L24 18L32 11M16 23H32V11H16V23Z" stroke="#032d60" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+      <text x="180" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#032d60" text-anchor="middle">📧 anjali.panchi@gmail.com</text>
+    </g>
+
+    <!-- Phone Action Button -->
+    <g transform="translate(30, 128)">
+      <rect x="0" y="0" width="360" height="34" rx="8" fill="#ffffff" fill-opacity="0.18" stroke="#ffffff" stroke-width="1.2" stroke-opacity="0.5"/>
+      <text x="180" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle">📞 +91 7289896549 (Call / WhatsApp)</text>
+    </g>
+  </g>
+
+  <!-- Footer Help Hint -->
+  <text x="400" y="385" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#94a3b8" text-anchor="middle">ℹ️ Contact our team to activate permanent access, remove user caps, or request custom object mappings.</text>
+</svg>
