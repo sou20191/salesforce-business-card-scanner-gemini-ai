@@ -112,8 +112,8 @@ sequenceDiagram
 ### Step 1: Install Package
 Deploy or install the package in your Salesforce environment:
 
-* **Production / Developer Edition:** [Install in Production](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tg5000000HGgH) *(Use your package installation link)*
-* **Sandbox:** [Install in Sandbox](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tg5000000HGgH) *(Use your sandbox package installation link)*
+* **Production / Developer Edition:** [Install in Production](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tg5000000HGoL) *(Use your package installation link)*
+* **Sandbox:** [Install in Sandbox](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tg5000000HGoL) *(Use your sandbox package installation link)*
 
 ---
 
