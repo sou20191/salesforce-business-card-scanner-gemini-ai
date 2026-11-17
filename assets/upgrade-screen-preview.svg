@@ -1,53 +1,118 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="100%" height="100%">
   <defs>
-    <linearGradient id="lockBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1b1b2f"/>
-      <stop offset="60%" stop-color="#3d1b38"/>
-      <stop offset="100%" stop-color="#991b1b"/>
+    <!-- Background Gradient: Deep Enterprise Navy to Indigo -->
+    <linearGradient id="enterpriseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#032d60"/>
+      <stop offset="50%" stop-color="#091e42"/>
+      <stop offset="100%" stop-color="#0b2a59"/>
     </linearGradient>
-    <filter id="cardGlow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
-      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.4"/>
+    
+    <!-- Accent Gold Gradient for Enterprise Badge -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="whiteCardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="panelShadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#032d60" flood-opacity="0.25"/>
+    </filter>
+    <filter id="pillShadow" x="-10%" y="-10%" width="120%" height="130%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.12"/>
     </filter>
   </defs>
 
-  <!-- Container -->
-  <rect x="10" y="10" width="780" height="400" rx="16" fill="url(#lockBg)" stroke="#475569" stroke-width="1.5"/>
+  <!-- Outer Container with Soft Slate Border -->
+  <rect x="2" y="2" width="796" height="436" rx="14" fill="url(#enterpriseGrad)" stroke="#1e3a8a" stroke-width="1.5" filter="url(#panelShadow)"/>
 
-  <!-- Centered Lock Icon Container -->
-  <circle cx="400" cy="75" r="32" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.3"/>
-  <circle cx="400" cy="75" r="42" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="4 4" stroke-opacity="0.5"/>
-  <!-- Lock SVG -->
-  <path d="M394 72V67C394 63.686 396.686 61 400 61C403.314 61 406 63.686 406 67V72M391 72H409C410.105 72 411 72.895 411 74V83C411 84.105 410.105 85 409 85H391C389.895 85 389 84.105 389 83V74C389 72.895 389.895 72 391 72Z" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Subtle Ambient Glow Rings -->
+  <circle cx="100" cy="80" r="120" fill="#38bdf8" fill-opacity="0.04"/>
+  <circle cx="700" cy="360" r="140" fill="#0176d3" fill-opacity="0.05"/>
 
-  <!-- Lock Title & Expiry Notice -->
-  <text x="400" y="135" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" fill="#ffffff" text-anchor="middle">Access Restricted</text>
-  <text x="400" y="158" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#fecaca" text-anchor="middle">License Expired: Your 7-day demo trial for this organization has concluded.</text>
+  <!-- Top Centered Enterprise Badge -->
+  <g transform="translate(265, 28)">
+    <rect x="0" y="0" width="270" height="26" rx="13" fill="url(#goldGrad)"/>
+    <!-- Crown Icon -->
+    <path d="M16 17L19 10L23 15L27 10L30 17H16Z" fill="#ffffff" transform="translate(6, -2)"/>
+    <text x="142" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">COMMERCIAL &amp; ENTERPRISE LICENSING</text>
+  </g>
 
-  <!-- Commercial Upgrade / Contact Card -->
-  <g transform="translate(190, 180)" filter="url(#cardGlow)">
-    <rect x="0" y="0" width="420" height="175" rx="14" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.3"/>
-    
-    <!-- Top Sparkle Badge -->
-    <rect x="125" y="16" width="170" height="24" rx="12" fill="#0176d3"/>
-    <text x="210" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="800" fill="#ffffff" text-anchor="middle">✨ FULL VERSION &amp; TEAM LICENSES</text>
+  <!-- Main Headline & Subhead -->
+  <text x="400" y="86" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="-0.3">Unlock Unlimited Scans for Your Entire Sales Team</text>
+  <text x="400" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400" fill="#93c5fd" text-anchor="middle">Seamlessly scale beyond the 7-day evaluation trial with perpetual or subscription org licenses.</text>
 
-    <!-- Subtitle -->
-    <text x="210" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="500" fill="#e2e8f0" text-anchor="middle">Ready to unlock unlimited scans and full team access? Contact our licensing desk:</text>
-
-    <!-- Email Action Button -->
-    <g transform="translate(30, 85)">
-      <rect x="0" y="0" width="360" height="36" rx="8" fill="#ffffff"/>
-      <path d="M16 11L24 18L32 11M16 23H32V11H16V23Z" stroke="#032d60" stroke-width="1.8" stroke-linecap="round" fill="none"/>
-      <text x="180" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#032d60" text-anchor="middle">📧 anjali.panchi@gmail.com</text>
+  <!-- 3 Value Proposition Cards -->
+  <g transform="translate(36, 134)">
+    <!-- Pillar 1: Unlimited Reps -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="228" height="96" rx="10" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-width="1" stroke-opacity="0.15"/>
+      <circle cx="32" cy="32" r="16" fill="#0176d3" fill-opacity="0.3"/>
+      <text x="32" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" text-anchor="middle">♾️</text>
+      <text x="58" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Unlimited Users &amp; Orgs</text>
+      <text x="16" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="400" fill="#cbd5e1">Remove the 2-user demo cap.</text>
+      <text x="16" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="400" fill="#cbd5e1">Deploy across all sales reps &amp; sandbox orgs.</text>
     </g>
 
-    <!-- Phone Action Button -->
-    <g transform="translate(30, 128)">
-      <rect x="0" y="0" width="360" height="34" rx="8" fill="#ffffff" fill-opacity="0.18" stroke="#ffffff" stroke-width="1.2" stroke-opacity="0.5"/>
-      <text x="180" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle">📞 +91 7289896549 (Call / WhatsApp)</text>
+    <!-- Pillar 2: Custom Objects -->
+    <g transform="translate(250, 0)">
+      <rect x="0" y="0" width="228" height="96" rx="10" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-width="1" stroke-opacity="0.15"/>
+      <circle cx="32" cy="32" r="16" fill="#10b981" fill-opacity="0.3"/>
+      <text x="32" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" text-anchor="middle">⚙️</text>
+      <text x="58" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Custom Field Mapping</text>
+      <text x="16" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="400" fill="#cbd5e1">Map extracted card data to Custom</text>
+      <text x="16" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="400" fill="#cbd5e1">Objects, Opportunities, or CPQ fields.</text>
+    </g>
+
+    <!-- Pillar 3: SLA & Support -->
+    <g transform="translate(500, 0)">
+      <rect x="0" y="0" width="228" height="96" rx="10" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-width="1" stroke-opacity="0.15"/>
+      <circle cx="32" cy="32" r="16" fill="#f59e0b" fill-opacity="0.3"/>
+      <text x="32" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" text-anchor="middle">🛡️</text>
+      <text x="58" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Dedicated Support SLA</text>
+      <text x="16" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="400" fill="#cbd5e1">Direct developer engineering support,</text>
+      <text x="16" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="400" fill="#cbd5e1">prompt tuning, and package updates.</text>
+    </g>
+  </g>
+
+  <!-- Direct Commercial Contact Card -->
+  <g transform="translate(36, 250)">
+    <!-- Container -->
+    <rect x="0" y="0" width="728" height="136" rx="12" fill="url(#whiteCardGrad)" stroke="#cbd5e1" stroke-width="1" filter="url(#panelShadow)"/>
+
+    <!-- Left side: Representative info -->
+    <g transform="translate(24, 24)">
+      <text x="0" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#0176d3" letter-spacing="0.5">COMMERCIAL PARTNERSHIP DESK</text>
+      <text x="0" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="800" fill="#0f172a">Anjali Panchi</text>
+      <text x="0" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#64748b">Enterprise Licensing &amp; Client Onboarding</text>
+      <text x="0" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#04844b">⚡ Same-day production license key delivery</text>
+    </g>
+
+    <!-- Right side: Contact Action Buttons -->
+    <g transform="translate(350, 24)">
+      <!-- Email Pill Button -->
+      <g transform="translate(0, 0)" filter="url(#pillShadow)">
+        <rect x="0" y="0" width="354" height="40" rx="8" fill="#0176d3"/>
+        <text x="24" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15">✉️</text>
+        <text x="50" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#ffffff">anjali.panchi@gmail.com</text>
+        <text x="330" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#bfdbfe" text-anchor="end">Email Us →</text>
+      </g>
+
+      <!-- Phone / WhatsApp Pill Button -->
+      <g transform="translate(0, 48)" filter="url(#pillShadow)">
+        <rect x="0" y="0" width="354" height="40" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+        <text x="24" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15">📞</text>
+        <text x="50" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#0f172a">+91 7289896549</text>
+        <text x="330" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#16a34a" text-anchor="end">Call / WhatsApp →</text>
+      </g>
     </g>
   </g>
 
   <!-- Footer Help Hint -->
-  <text x="400" y="385" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#94a3b8" text-anchor="middle">ℹ️ Contact our team to activate permanent access, remove user caps, or request custom object mappings.</text>
+  <text x="400" y="412" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#93c5fd" text-anchor="middle">Custom agreements available for Salesforce ISVs, SI consulting partners, and high-volume sales teams.</text>
 </svg>
