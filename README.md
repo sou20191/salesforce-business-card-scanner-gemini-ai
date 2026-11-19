@@ -59,7 +59,6 @@ In modern B2B sales, conferences, and field networking, paper business cards rem
 ### 5. 🔒 Enterprise Security & Anti-Loophole Protection
 * **Server-Side Enforcement:** Strictly enforced server-side access control with `WITH USER_MODE` SOQL queries and sharing rules.
 * **7-Day Automated Trial:** Evaluates automatically from the moment a user is assigned to the `Card Scanner Access` permission set.
-* **Anti-Recycling Registry:** Limits the trial to **2 unique users across the organization's lifetime**, preventing license recycling loopholes while allowing seamless evaluation.
 
 ---
 
