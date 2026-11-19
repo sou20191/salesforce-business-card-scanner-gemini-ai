@@ -7,10 +7,11 @@
 [![LWC](https://img.shields.io/badge/Frontend-Lightning%20Web%20Components-0176D3?style=for-the-badge)](https://developer.salesforce.com/docs/component-library/overview/components)
 [![License](https://img.shields.io/badge/License-7--Day%20Free%20Trial-28a745?style=for-the-badge)](mailto:anjali.panchi@gmail.com)
 [![Status](https://img.shields.io/badge/Status-Production%20Ready-success?style=for-the-badge)]()
+[![YouTube Demo](https://img.shields.io/badge/YouTube-Watch%20Demo-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=2WouZE8YL90)
 
 **Transform physical paper business cards into structured Salesforce Leads, Contacts, and Accounts in seconds using multimodal AI vision.**
 
-[Key Features](#-key-features) • [Architecture](#-architecture--data-flow) • [Tech Stack](#-technology-stack) • [Quick Start](#-quick-start--installation) • [Licensing](#-licensing--commercial-inquiries)
+[Live Demo Video](#-live-product-walkthrough) • [Key Features](#-key-features) • [Architecture](#-architecture--data-flow) • [Tech Stack](#-technology-stack) • [Quick Start](#-quick-start--installation) • [Licensing](#-licensing--commercial-inquiries)
 
 <br/>
 
@@ -25,6 +26,20 @@
 In modern B2B sales, conferences, and field networking, paper business cards remain a staple. However, manually typing contact information into Salesforce is tedious, error-prone, and delays lead follow-ups.
 
 **AI-Powered Business Card Scanner** solves this problem by embedding a camera capture interface and Google Gemini AI Vision directly inside your Salesforce CRM (both desktop and Salesforce Mobile App). Sales reps simply snap a photo of any card, and in seconds, names, job titles, phone numbers, email addresses, websites, and physical addresses are automatically parsed, verified, and mapped directly into Salesforce CRM records.
+
+---
+
+## 📺 Live Product Walkthrough
+
+Watch the full 60-second end-to-end demonstration—from opening the scanner in Salesforce Lightning and scanning a card with Google Gemini AI, to multi-field extraction and 1-click CRM record creation:
+
+<div align="center">
+
+[![Watch Salesforce Business Card Scanner Demo on YouTube](https://img.youtube.com/vi/2WouZE8YL90/maxresdefault.jpg)](https://www.youtube.com/watch?v=2WouZE8YL90)
+
+**[▶️ Click to Watch the Full Product Walkthrough on YouTube](https://www.youtube.com/watch?v=2WouZE8YL90)**
+
+</div>
 
 ---
 
@@ -59,6 +74,7 @@ In modern B2B sales, conferences, and field networking, paper business cards rem
 ### 5. 🔒 Enterprise Security & Anti-Loophole Protection
 * **Server-Side Enforcement:** Strictly enforced server-side access control with `WITH USER_MODE` SOQL queries and sharing rules.
 * **7-Day Automated Trial:** Evaluates automatically from the moment a user is assigned to the `Card Scanner Access` permission set.
+* **Anti-Recycling Registry:** Limits the trial to **2 unique users across the organization's lifetime**, preventing license recycling loopholes while allowing seamless evaluation.
 
 ---
 
@@ -153,7 +169,7 @@ Get in touch directly with our licensing and commercial partnership team:
 
 <br/>
 
-![Commercial License & Upgrade Preview](assets/upgrade-screen-preview.svg?v=2)
+![Commercial License & Upgrade Preview](assets/upgrade-screen-preview.svg?v=3)
 
 <br/>
 
